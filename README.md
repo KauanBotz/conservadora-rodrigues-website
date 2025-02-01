@@ -14,6 +14,6 @@ Este projeto oferece uma plataforma interativa para orçamentos, cadastro de cur
 
 ## Tecnologias Usadas
 
-- **Front-end**: HTML5, CSS3, JavaScript
-- **Back-end**: Node.js, Express.js
-- **APIs externas**: FormSubmit.co para gerenciamento de formulários
+- **Front-end**: `HTML5, CSS3, JavaScript`
+- **Back-end**: `Node.js, Express.js`
+- **APIs externas**: `FormSubmit.co para gerenciamento de formulários`
