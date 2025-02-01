@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservadora Rodrigues</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+  <header>
+        <nav class="navbar">
+            <div class="logo" onclick="window.location.href='/'" style="cursor: pointer;">
+                <img src="/icon.png" alt="Logo Conservadora Rodrigues">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#quem-somos">QUEM SOMOS</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#orcamento">ORÇAMENTO</a></li>
+                <li><a href="#trabalhe-conosco">TRABALHE CONOSCO</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="close-icon">×</span>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>CONSERVADORA RODRIGUES</h1>
+                <h2>A MAIS DE 9 ANOS NO MERCADO!</h2>
+                <p>Conservação, limpeza de condomínios, escritórios, zeladoria e portaria.</p>
+                <button class="cta-button" onclick="window.location.href='#orcamento'">SOLICITA SEU ORÇAMENTO</button>
+            </div>
+        </section>
+
+        <section id="quem-somos" class="about">
+            <h2>QUEM SOMOS</h2>
+            <div class="about-content">
+                <div class="history">
+                    <h3>Nossa História</h3>
+                    <p>A Conservadora Rodrigues é uma empresa de Belo Horizonte, fundada em 2016, especializada em serviços de limpeza, zeladoria, portaria e conservação para condomínios, galpões e escritórios. Nosso compromisso é oferecer soluções eficientes e de alta qualidade, garantindo a satisfação e segurança dos nossos clientes.</p>
+                    <p>Com a missão de criar ambientes limpos e seguros, buscamos sempre a excelência no serviço, destacando-nos pela terceirização de mão de obra especializada. Ao longo dos anos, a Conservadora Rodrigues se consolidou como uma marca de referência, reconhecida pela dedicação e pela qualidade de seus serviços.</p>
+                </div>
+                <div class="mission-vision">
+                    <h3>Missão, Visão e Valores</h3>
+                    <p><strong>Missão:</strong> Criar ambientes limpos e seguros, com soluções eficientes e de alta qualidade, garantindo a satisfação e a segurança dos nossos clientes.</p>
+                    <p><strong>Visão:</strong> Ser referência no mercado de serviços de limpeza e conservação, reconhecida pela excelência no atendimento, inovação e respeito aos nossos colaboradores e clientes.</p>
+                    <p><strong>Valores:</strong> Integridade, respeito, inovação, humanidade, profissionalismo, compromisso e responsabilidade social são os pilares que sustentam a nossa atuação e relacionamentos.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="servicos" class="services">
+            <h2>SERVIÇOS OFERECIDOS</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Limpeza de Condomínios</h3>
+                    <p>Oferecemos serviços completos de limpeza para condomínios. Utilizamos nossos próprios produtos e contamos com uma equipe especializada para garantir um ambiente saudável e agradável.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Limpeza de Caixa d'Água e Gordura</h3>
+                    <p>Garantimos a higienização completa da sua caixa d'água e caixa de gordura, com certificação e relatórios de qualidade.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Portaria, Zeladoria e Jardinagem</h3>
+                    <p>Oferecemos serviços de portaria e zeladoria para segurança e manutenção do condomínio, além de jardinagem, como corte de grama e poda de árvores, para mantê-lo sempre bem cuidado.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Administradora e Síndico Profissional</h3>
+                    <p>Gestão eficiente e transparente com nossa equipe de administradores e síndicos profissionais, proporcionando uma consultoria personalizada.</p>
+                </div>
+            </div>
+        </section>
+
+        <article>
+            <div id="verde">
+                </div>
+            </div>
+    
+            <section id="orcamento">
+                <h2>ORÇAMENTO</h2>
+                    <form id='forSubmit' action='https://formsubmit.co/ajax/conservadorar3@hotmail.com' method='POST'>
+                        <label for='nome'>Nome:</label>
+                        <input type='text' id='nome' name='nome' placeholder='Seu nome completo' required>
+                        <label for='email'>E-mail:</label>
+                        <input type='email' id='email' name='email' placeholder='Seu e-mail' required>
+                        <label for='telefone'>Telefone:</label>
+                        <input type='tel' id='telefone' name='telefone' placeholder='Seu telefone' required>
+                        <label for='servico'>Tipo de Serviço Desejado:</label>
+                        <select id='servico' name='servico' required>
+                            <option value='' disabled selected>Selecione um serviço</option>
+                            <option value='limpeza'>Limpeza de Condomínios</option>
+                            <option value='jardinagem'>Jardinagem</option>
+                            <option value='zeladoria'>Zeladoria e Portaria</option>
+                            <option value='administracao'>Administração de Condomínios</option>
+                        </select>
+                        <label for='mensagem'>Mensagem:</label>
+                        <textarea id='mensagem' name='mensagem' required></textarea>
+                        <button type='submit'>Enviar</button>
+                        <div id="thank-you-message"></div>
+                    </form>
+                </div>
+            </section>
+        </article>
+    
+
+        <section id="trabalhe-conosco">
+            <div class="form-container">
+                <img src="/orcamento.png" alt="Logo Conservadora Rodrigues" class="imagem">
+                <form id="trabalhe-form" action='https://formsubmit.co/ajax/conservadorar3@hotmail.com' method='POST'> 
+                    <label for="curriculo">Enviar Currículo:</label>
+                    <input type="file" id="curriculo" name="curriculo" required>
+                    <label for="contato">Informações de Contato:</label>
+                    <input type="text" id="contato" name="contato" required placeholder="Seu e-mail ou telefone">
+                    <button type="submit">Enviar Seu Currículo</button>
+                    <div id='thank-you-message-trabalhe'></div>
+                </form>
+            </div>
+        </section>
+        
+        
+
+        <section id="contato" class="contact">
+            <h2 style="text-align: center;">CONTATO</h2>
+            <div class="contact-info" style="text-align: center;">
+                <p>WhatsApp: <a href="https://wa.me/5531999121213?text=Olá, gostaria de obter mais informações sobre os serviços da Conservadora Rodrigues." target="_blank">(31) 99912-1213</a></p>
+                <p><i class="fa-solid fa-envelope" style="color: #004d40;"></i> Email: conservadorar3@hotmail.com</p>
+                <p><i class="fa-brands fa-linkedin" style="color: #004d40;"></i> LinkedIn: <a href="https://www.linkedin.com/company/conservadorarodrigues/" target="_blank">Conservadora Rodrigues</a></p>
+            </div>
+        </section>
+        
+        <div class="footer">
+            <div class="footer-logo">
+            </div>
+            <div class="footer-content">
+              <div class="footer-info">
+                <p>Rua Doutor Álvaro Camargo, 2253 - Santa Mônica - Belo Horizonte/MG</p>
+                <p>CNPJ: 24.053.260/0001-93</p>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              2025 Conservadora Rodrigues. Todos os direitos reservados.
+            </div>
+          </div>
+          
+</body>
+</html>
