@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Função para enviar o formulário de orçamento
     function enviarFormularioOrcamento() {
         const formulario = document.getElementById('orcamento-form');
         const dados = new FormData(formulario);
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Erro:', error));
     }
 
-    // Função para alternar o menu
     function toggleMenu() {
         const navLinks = document.querySelector('.nav-links');
         const toggleButton = document.querySelector('.menu-toggle');
@@ -24,10 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleButton.setAttribute('aria-expanded', navLinks.classList.contains('active'));
     }
 
-    // Adiciona evento de clique para o menu
     document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
 
-    // Lida com o clique nos links de navegação
     const navLinks = document.querySelectorAll('.nav-links li a');
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
@@ -46,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Scroll suave para a seção de orçamento ao clicar no botão
     const budgetButton = document.querySelector('.cta-button');
     budgetButton.addEventListener('click', (event) => {
         const targetElement = document.getElementById('orcamento');
@@ -59,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Esconde ou mostra a navbar ao rolar a página
     let lastScroll = 0;
     const navbar = document.querySelector('.navbar');
 
@@ -80,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
         lastScroll = currentScroll;
     });
 
-    // Envio do formulário de contato com fetch
     const form = document.getElementById("forSubmit");
 
     form.addEventListener("submit", async function (event) {
@@ -118,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Envio do formulário de trabalho
     const formTrabalhe = document.getElementById("trabalhe-form");
 
     formTrabalhe.addEventListener("submit", async function (event) {
